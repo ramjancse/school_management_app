@@ -22,5 +22,5 @@ from school_site import urls
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('add-techer/', views.show_teacher_info, name='show_teacher_info'),
-    path('school/', include(urls))
+    path('blog/', include('blog.urls')), 
 ]
